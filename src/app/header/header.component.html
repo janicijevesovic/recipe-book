@@ -5,12 +5,22 @@
   <a href="#" (click)="onSelect('shopping-list')">Shopping List</a>
 
   <ul class="nav navbar-nav navbar-right">
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" role="button">Manage</a>
-      <ul class="dropdown-menu">
+    <div class="dropdown">
+      <a
+        class="dropdown-toggle"
+        href="#"
+        role="button"
+        id="manage"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Manage
+      </a>
+
+      <ul class="dropdown-menu" aria-labelledby="manage">
         <li><a href="#">Save Data</a></li>
         <li><a href="#">Fetch Data</a></li>
       </ul>
-    </li>
+    </div>
   </ul>
 </nav>
