@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -27,7 +28,7 @@ import { ShoppingListService } from './shopping-list/shopping-list.service';
     RecipeItemComponent,
     DropdownDirective,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, RouterModule],
   providers: [ShoppingListService],
   bootstrap: [AppComponent],
 })
