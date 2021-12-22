@@ -6,6 +6,6 @@ img {
   color: red;
 }
 
-/* .btn-group ul {
-  display: none;
-} */
+a {
+  cursor: pointer;
+}
