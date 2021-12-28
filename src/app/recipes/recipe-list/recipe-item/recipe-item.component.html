@@ -1,4 +1,4 @@
-<a (click)="onItemClick()" class="list-group-item clearfix">
+<a [routerLink]="[index]" class="list-group-item clearfix">
   <div>
     <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
     <p class="list-group-item-text">{{ recipe.description }}</p>
