@@ -12,20 +12,22 @@ export class RecipeService {
 
   recipesChanged = new Subject<Recipe[]>();
 
-  private recipes: Recipe[] = [
-    new Recipe(
-      'Tasty Schnitzel',
-      'This is simply a test1',
-      'https://p0.pxfuel.com/preview/995/747/603/recipe-dish-lunch-nutrition.jpg',
-      [new Ingredient('Meat', 1), new Ingredient('French Fries', 20)]
-    ),
-    new Recipe(
-      'Big Fat Burger',
-      'This is simply a test2',
-      'https://p0.pxfuel.com/preview/995/747/603/recipe-dish-lunch-nutrition.jpg',
-      [new Ingredient('Buns', 2), new Ingredient('Meat', 1)]
-    ),
-  ];
+  // private recipes: Recipe[] = [
+  //   new Recipe(
+  //     'Tasty Schnitzel',
+  //     'This is simply a test1',
+  //     'https://p0.pxfuel.com/preview/995/747/603/recipe-dish-lunch-nutrition.jpg',
+  //     [new Ingredient('Meat', 1), new Ingredient('French Fries', 20)]
+  //   ),
+  //   new Recipe(
+  //     'Big Fat Burger',
+  //     'This is simply a test2',
+  //     'https://p0.pxfuel.com/preview/995/747/603/recipe-dish-lunch-nutrition.jpg',
+  //     [new Ingredient('Buns', 2), new Ingredient('Meat', 1)]
+  //   ),
+  // ];
+
+  private recipes: Recipe[] = [];
 
   setRecipes(recipes: Recipe[]) {
     this.recipes = recipes;
