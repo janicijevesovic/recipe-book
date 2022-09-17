@@ -1,11 +1,12 @@
 <nav class="navbar navbar-default">
   <a href="#" class="navbar-brand">Recipe Book</a>
 
-  <a routerLink="/recipes">Recipes</a>
-  <a routerLink="/auth">Authenticate</a>
+  <a routerLink="/recipes" *ngIf="isAuthenticated">Recipes</a>
+  <a routerLink="/auth" *ngIf="!isAuthenticated">Authenticate</a>
   <a routerLink="/shopping-list">Shopping List</a>
+  <a *ngIf="isAuthenticated">Logout</a>
 
-  <ul class="nav navbar-nav navbar-right">
+  <ul *ngIf="isAuthenticated" class="nav navbar-nav navbar-right">
     <div class="dropdown">
       <a
         class="dropdown-toggle"
