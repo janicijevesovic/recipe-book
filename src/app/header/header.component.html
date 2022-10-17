@@ -4,7 +4,9 @@
   <a routerLink="/recipes" *ngIf="isAuthenticated">Recipes</a>
   <a routerLink="/auth" *ngIf="!isAuthenticated">Authenticate</a>
   <a routerLink="/shopping-list">Shopping List</a>
-  <a *ngIf="isAuthenticated">Logout</a>
+  <a *ngIf="isAuthenticated" style="cursor: pointer" (click)="onLogout()"
+    >Logout</a
+  >
 
   <ul *ngIf="isAuthenticated" class="nav navbar-nav navbar-right">
     <div class="dropdown">
