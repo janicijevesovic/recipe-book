@@ -8,9 +8,7 @@ import { ShoppingListComponent } from './shopping-list.component';
 @NgModule({
   declarations: [ShoppingListComponent, ShoppingListEditComponent],
   imports: [
-    RouterModule.forChild([
-      { path: 'shopping-list', component: ShoppingListComponent },
-    ]),
+    RouterModule.forChild([{ path: '', component: ShoppingListComponent }]),
     SharedModule,
     FormsModule,
   ],
